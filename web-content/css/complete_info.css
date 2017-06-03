@@ -1,0 +1,262 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(84,179,217);
+}
+html {
+	font-size: 100px;/*1rem = 100px*/
+}
+.bg-box,
+.row {
+	width: 100%;
+	height: 100%;
+}
+
+/*完善信息盒子样式*/
+.complete-info-box {
+	width: 4.55rem;
+	height: 5.5rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -2.75rem;
+	margin-left: calc((100% - 4.55rem) / 2);
+	margin-left: -webkit-calc((100% - 4.55rem) / 2);
+	margin-left: -moz-calc((100% - 4.55rem) / 2);
+	background-color: rgb(110,190,222);
+	box-shadow: 0 0 0.05rem rgb(90,180,216);
+	-webkit-box-shadow: 0 0 0.05rem rgb(90,180,216);
+	-moz-box-shadow: 0 0 0.05rem rgb(90,180,216);
+	overflow: hidden;
+	padding: 0;
+}
+/*表单样式*/
+.complete-info-box form {
+	width: 300%;
+	color: rgb(255,255,255);
+	position: relative;
+}
+/*完善信息每一页样式*/
+.form-page {
+	width: 33.3333333333%;
+	height: 5.5rem;
+	float: left;
+	background-color: rgb(110,190,222);
+	position: relative;
+}
+.form-page h1 {
+	font-size: 0.5rem;
+	letter-spacing: 0.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.2rem;
+}
+.form-page p {
+	font-size: 0.16rem;
+	letter-spacing: 0.02rem;
+}
+
+/*完善信息第二页*/
+.form-page table {
+	margin: 0 auto;
+}
+.form-page table tr {
+	display: block;
+	margin-top: 0.15rem;
+	border-bottom: 0.01rem solid rgba(255,255,255,.3);
+	position: relative;
+}
+/*图标*/
+.icons {
+	width: 0.62rem;
+}
+.icons i {
+	margin-right: 0.3rem;
+}
+/*手机icon*/
+.fa-mobile {
+	margin-left: 0.05rem;
+	margin-right: 0.25rem;
+}
+/*input样式*/
+.form-page table tr td input {
+	width: 2.3rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	background-color: rgb(110,190,222);
+	border:none;
+	outline: none;
+	font-size: 0.16rem;
+}
+/*input框placeholder文字样式*/
+input::-webkit-input-placeholder {
+	font-size: 0.16rem;
+	color: rgba(255,255,255,.7);
+	letter-spacing: 0.02rem;
+	padding-left: 0.15rem;
+}
+input:-moz-input-placeholder {
+	font-size: 0.16rem;
+	color: rgba(255,255,255,.7);
+	letter-spacing: 0.02rem;
+	padding-left: 0.15rem;
+}
+input::-moz-input-placeholder {
+	font-size: 0.16rem;
+	color: rgba(255,255,255,.7);
+	letter-spacing: 0.02rem;
+	padding-left: 0.15rem;
+}
+input:-ms-input-placeholder {
+	font-size: 0.16rem;
+	color: rgba(255,255,255,.7);
+	letter-spacing: 0.02rem;
+	padding-left: 0.15rem;
+}
+/*textarea placeholder文字样式*/
+textarea::-webkit-input-placeholder {
+	color: rgba(255,255,255,.7);
+}
+textarea:-moz-input-placeholder {
+	color: rgba(255,255,255,.7);
+}
+textarea::-moz-input-placeholder {
+	color: rgba(255,255,255,.7);
+}
+textarea:-ms-input-placeholder {
+	color: rgba(255,255,255,.7);
+}
+
+/*表单校验提示信息*/
+.interpret {
+	position: absolute;
+	top: 0.15rem;
+	left: 2.2rem;
+	width: 1.7rem;
+	color: rgba(255,255,255,.7);
+}
+/*表单校验填写正确的 ✓ 样式*/
+.fa-check-circle {
+	color: rgb(31,164,99);
+}
+/*表单校验填写错误的 ✗ 样式*/
+.fa-times-circle {
+	color: rgb(222,81,69);
+}
+
+/*完善信息第三页*/
+.message-box {
+	margin: 0.2rem 0.79rem;
+}
+.message-box p span {
+	margin-left: 0.45rem;
+	color: rgba(255,255,255,.7);
+}
+
+/*选择身份*/
+.message-box .identity-box span {
+	margin-left: 0;
+	display: inline-block;
+	position: relative;
+	width: 0.5rem;
+	height: 0.3rem;
+	margin-right: 0.12rem;
+}
+.identity-box label {
+	font-size: 0.15rem;
+	font-weight: 200;
+	color: rgba(255,255,255,1);
+	padding: 0.03rem 0.07rem;
+	border: 0.01rem solid rgb(255,255,255);
+	border-radius: 0.07rem;
+	-webkit-border-radius: 0.07rem;
+	-moz-border-radius: 0.07rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#teacher-radio,
+#student-radio {
+	width: 0.5rem;
+	height: 0.3rem;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+/*输入简介的文本域*/
+.message-box textarea {
+	width: 100%;
+	resize: none;
+	background-color: rgb(110,190,222);
+	border: 0.01rem solid rgba(255,255,255,.5);
+	font-size: 0.12rem;
+	overflow: hidden;/*不出现滚动条*/
+	margin-bottom: 0.05rem;
+}
+/*上传附件*/
+.user-file-p {
+	position: relative;
+}
+.file-box {
+	position: absolute;
+	width: 100%;
+	border: 0.01rem solid rgba(255,255,255,.5);
+}
+/*文件名*/
+.file-name {
+	width: 2rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	float: left;
+	padding-left: 0.02rem;
+}
+/*"上传附件"*/
+.upload-file {
+	width: 0.8rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	padding-left: 0.1rem;
+	border-left: 0.01rem solid rgba(255,255,255,.5);
+	float: right;
+}
+.user-file-p input[type="file"] {
+	position: absolute;
+	opacity: 0;/*设置成透明*/
+	cursor: pointer;
+	width: 100%;
+	height: 0.3rem;
+}
+
+/*上一步按钮*/
+.prev-btn {
+	padding: 0.03rem 0.1rem;
+	background-color: rgb(110,190,222);
+	border: none;
+	position: absolute;
+	left: 0.2rem;
+	bottom: 0.2rem;
+	outline: none;/*清除高亮效果*/
+}
+
+/*下一步按钮*/
+.next-btn {
+	padding: 0.015rem 0.1rem;
+	background-color: rgb(110,190,222);
+	border: 0.01rem solid rgb(255,255,255);
+	border-radius: 43%;
+	-webkit-border-radius: 43%;
+	-moz-border-radius: 43%;
+	position: absolute;
+	right: 0.2rem;
+	bottom: 0.2rem;
+	outline: none;
+}
+.next-btn:hover {
+	background-color: rgba(255,255,255,.3);
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+}

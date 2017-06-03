@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>完善信息</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/complete_info.css" />
+</head>
+<body>
+	<!-- 背景盒子 -->
+	<div class="container bg-box">
+		<div class="row">
+			<!-- 完善信息盒子 -->
+			<div class="complete-info-box">
+				<form class="clearfix">
+					<!-- 完善信息第一页 -->
+					<div class="form-page">
+						<h1 class="text-center">我的项目喵</h1>
+						<!-- 下一步 -->
+						<button class="next-btn">
+							<i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i>
+						</button>
+					</div>
+					
+					<!-- 完善信息第二页 -->
+					<div class="form-page">
+						<h1 class="text-center">完善信息</h1>
+						<p class="text-center">您好，欢迎来到项目喵</p>
+						<table>
+							<!-- 用户名字 -->
+							<tr>
+								<td class="icons">
+									<i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+								</td>
+								<td>
+									<input type="text" name="user-name" id="user-name" placeholder="请输入您的名字" autocomplete="off" />
+								</td>
+								<td class="interpret"></td>
+							</tr>
+							<!-- 用户手机 -->
+							<tr>
+								<td class="icons">
+									<i class="fa fa-mobile fa-3x" aria-hidden="true" class="fa-mobile"></i>
+								</td>
+								<td>
+									<input type="text" name="user-phone" id="user-phone" placeholder="请输入您的手机" autocomplete="off" />
+								</td>
+								<td class="interpret"></td>
+							</tr>
+							<!-- 用户邮箱 -->
+							<tr>
+								<td class="icons">
+									<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+								</td>
+								<td>
+									<input type="email" name="user-email" id="user-email" placeholder="请输入您的邮箱" autocomplete="off" />
+								</td>
+								<td class="interpret"></td>
+							</tr>
+							<!-- 用户学校 -->
+							<tr>
+								<td class="icons">
+									<i class="fa fa-university fa-2x" aria-hidden="true"></i>
+								</td>
+								<td>
+									<input type="text" name="user-school" id="user-school" placeholder="请输入您的学校" autocomplete="off" />
+								</td>
+								<td class="interpret"></td>
+							</tr>
+						</table>
+						<!-- 上一步 -->
+						<button class="prev-btn">
+							<i class="fa fa-long-arrow-left fa-2x" aria-hidden="true"></i>
+						</button>
+						<!-- 下一步 -->
+						<button class="next-btn">
+							<i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i>
+						</button>	
+					</div>
+					
+					<!-- 完善信息第三页 -->
+					<div class="form-page">
+						<h1 class="text-center">完善信息</h1>
+						<p class="text-center">您好，欢迎来到项目喵</p>
+						<div class="message-box">
+							<!-- 用户身份 -->
+							<p class="text-left">
+								<i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+								<span>请选择您的身份</span>
+							</p>
+							<p class="text-center identity-box">
+								<!-- 老师 -->
+								<span>
+									<label for="teacher-radio">老师</label>
+									<input type="radio" name="user-identity" value="teacher" id="teacher-radio" />
+								</span>
+								<!-- 学生 -->
+								<span>
+									<label for="student-radio">学生</label>
+									<input type="radio" name="user-identity" value="stduent" id="student-radio" />
+								</span>
+							</p>
+
+							<!-- 用户简介 -->
+							<p class="text-left">
+								<i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+								<span>请输入您的简介</span>
+							</p>
+							<textarea rows="8" class="user-intro" placeholder="不超过150字"></textarea>
+
+							<!-- 上传附件 -->
+							<div class="user-file-p">
+								<div class="file-box clearfix">
+									<span class="file-name"></span>
+									<span class="upload-file">上传附件</span>
+								</div>
+								<input type="file" name="user-file" id="user-file" />
+							</div>
+							
+						</div>
+						
+						<!-- 上一步 -->
+						<button class="prev-btn">
+							<i class="fa fa-long-arrow-left fa-2x" aria-hidden="true"></i>
+						</button>
+						<!-- 下一步 -->
+						<button class="next-btn" id="sub-btn">
+							<i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i>
+						</button>	
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/complete_info.js"></script>
+</body>
+</html>
